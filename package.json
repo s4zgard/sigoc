@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "server": "nodemon api/server.js",
+    "start": "node api/server.js",
     "dev": "concurrently \"npm run server\" \"npm --prefix client run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
