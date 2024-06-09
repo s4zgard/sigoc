@@ -1,0 +1,29 @@
+{
+  "name": "sigoc",
+  "version": "1.0.0",
+  "description": "Shop info collection app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon api/server.js",
+    "dev": "concurrently \"npm run server\" \"npm --prefix client run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [
+    "SIGOC"
+  ],
+  "author": "Sajjad Ahmed",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5"
+  }
+}

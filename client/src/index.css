@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action-cell {
+  text-align: center;
+}
+
+.action-icons {
+  display: flex;
+  justify-content: center;
+}
